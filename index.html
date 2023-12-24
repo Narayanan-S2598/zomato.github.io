@@ -2,7 +2,8 @@
 <html>
     <head>        
         <title>index page </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
 
             body  {
@@ -50,21 +51,21 @@
               }
               
               #rcorners {
-                margin-left:auto;
-  border-radius: 15px;
-  background: #73AD21;  
-  width: 33%;
-  height: 120%;
-}
-#rcorners1 {
-  margin-left: auto;
-  
-  border-radius: 15px;
-  background: #73AD21;  
-  width: 24%;
-  height: 120%;
-}
-body  {
+                  margin-left:5%;
+                  border-radius: 15px;
+                  background: #73AD21;  
+                  width: 25%;
+                  height: 120%;
+                }
+                #rcorners1 {
+                  margin-left: 1%;
+                  
+                  border-radius: 15px;
+                  background: #73AD21;  
+                  width: 23%;
+                  height: 120%;
+                }
+              body{
               background-image: url("main.png");
               height: 180px; /* You must set a specified height */
               background-position: center; /* Center the image */
@@ -73,42 +74,116 @@ body  {
                     
             }
             
-.bgimg{
-  /* The image used */
-  background-image: url("q4.jpeg  ");
+            .bgimg{
+              /* The image used */
+              background-image: url("rrr.jpg  ");
 
-  height: 180px;
+              height: 250px;
+              background-repeat: no-repeat; /* Do not repeat the image */
+              background-size: cover;    
+              
+              
+            }
+            /* .topnav {
+              overflow: hidden;
+              background-color: #333;
+            } */
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
+            .topnav a {
+              float: right;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 30px 20px;
+              text-decoration: none;
+              font-size: 20px;
+            }
+
+            /* .topnav a:hover {
+              background-color: #ddd;
+              color: black;
+            } */
+
+              /* .topnav a.active {
+                background-color: #04AA6D;
+                color: white;
+              } */
+            .topnav a.split {
+              float: left;
+              color: white;
+            }
+            hr { 
+              display: block;
+              margin-top: 0.5em;
+              margin-bottom: 0.5em;
+              margin-left: auto;
+              margin-right: auto;
+              border-style: inset;
+              border-width: 1px;
+            } 
+            button{ 
+            padding-left: 5%;
+            margin-right: 5%;
+            margin-left: 5%;
+            border: #5221ad;
+  color: rgb(176, 165, 165);  
+  padding: 15px 32px;
+  text-align: center;
+
+  font-size: 16px;
+            
+        } 
+        a:link {
+  text-decoration: none;
+} 
 
 
     </style>
     </head>
     <body>
+          <div class="topnav">
+            <a class="split" href="#home">Get the app</a>
+
+            <a href="https://www.zomato.com/">Sign up</a>
+            <a href="https://www.zomato.com/">Log in</a>
+            <a href="https://www.zomato.com/">Add restaurant</a>
+            <a href="https://www.zomato.com/">Investor Relations</a>
+          </div>
           <div class="header">
             <h1>Zomato</h1>
             <p>Discover the best food & drinks in Hyderabad</p>
-            <input type="text" id="fname" name="fname" size="60"></a><br><br>
+           
+            <form action="https://www.zomato.com/">
+             
+             
+              <select name="" id="">
+                <optgroup label="Five star" style="size: 15;">
+                  <option value="paradise">Paradise</option>
+                  <option value="Taj">Taj</option>
+                </optgroup>
+                <optgroup label="Four star">
+                  <option value="Ganga Hotel">Ganga hotel</option>
+                  <option value="park town Hotel">park town hotel</option>
+                </optgroup>
+                
+              </select>
+              <input type="text" id="fname" name="fname" size="80" height="30" placeholder="Search for restaurant ,cuisine or a dish">
+              
+             </form>
+            <br><br>
           </div>
           <br>
           <br>
                    
-          <frameset cols >
+          <frameset cols="25%,25%,25%" >
             <frame  name = "left" src = "img1.png"><a href="https://www.zomato.com/"> <img id="rcorners" src="img1.png"></a>
               <frame   name = "center" src ="img2.png"><a href="https://www.zomato.com/"><img id="rcorners" src="img2.png"></a>
               <frame   name = "right" src = "img3.png"><a href="https://www.zomato.com/"><img id="rcorners"  src="img3.png"></a>
               
            </frameset>  
-
-
+           <br>
           <div class="collection">
-            <h2>Collections</h2>
-             <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Hyderabad, based on trends</p>
+            <h2 style="font-size: 250%;">Collections</h2>
+             <p style="font-style: normal;color: black;">Explore curated lists of top restaurants, cafes, pubs, and bars in Hyderabad, based on trends                 <a href="https://www.zomato.com/ " style="margin-left: 10%;color: red;">All collections near your locality >></a></p>
           </div>      
 
           <frameset cols="25%,25%,25%,25%" >
@@ -120,15 +195,23 @@ body  {
            </frameset>  
 
            <div class="collection2">
-            <h2>Popular localities in and around</h2>             
+            <h2 style="font-size: 250%;">Popular localities in and around</h2>             
           </div>    
+          
+    
+          
           
           <br>
           
           <frameset cols >
-            <frame  name = "left" src = "img1.png"><a href="https://www.zomato.com/"> <input type="text" id="fname" name="fname" size="53"></a>
-              <frame   name = "center" src ="img2.png"><a href="https://www.zomato.com/"><input type="text" id="fname" name="fname" size="53"></a></a>
-              <frame   name = "right" src = "img3.png"><a href="https://www.zomato.com/"><input type="text" id="fname" name="fname" size="53"></a></a>
+              
+            <a href="https://www.zomato.com/"><button style="font-size:40px">Hyderabad <i class="fa-solid fa-chevron-right">&#xf054;</i></button></a>
+            
+            <a href="https://www.zomato.com/"><button style="font-size:40px" >Chennai <i class="fa-solid fa-chevron-right">&#xf054;</i></button></a> 
+              
+            <a href="https://www.zomato.com/"><button style="font-size:40px">Bengaluru<i class="fa-solid fa-chevron-right">&#xf054;</i></button></a>
+ 
+ 
               
            </frameset>  
            <br>
@@ -136,9 +219,13 @@ body  {
            <br>
 
            <frameset cols >
-            <frame  name = "left" src = "img1.png"><a href="https://www.zomato.com/"> <input type="text" id="fname" name="fname" size="53"></a></a>
-              <frame   name = "center" src ="img2.png"><a href="https://www.zomato.com/"><input type="text" id="fname" name="fname" size="53"></a></a>
-              <frame   name = "right" src = "img3.png"><a href="https://www.zomato.com/"><input type="text" id="fname" name="fname" size="53"></a></a>
+            <a href="https://www.zomato.com/"><button style="font-size:40px">Trivandrum <i class="fa-solid fa-chevron-right">&#xf054;</i></button></a>
+            
+            <a href="https://www.zomato.com/"><button style="font-size:40px" >Tuticorin <i class="fa-solid fa-chevron-right">&#xf054;</i></button></a> 
+              
+            <a href="https://www.zomato.com/"><button style="font-size:40px">Sri lanka<i class="fa-solid fa-chevron-right">&#xf054;</i></button></a>
+ 
+ 
               
            </frameset>  
            <br>
@@ -146,36 +233,50 @@ body  {
            <br>
 
            <frameset cols >
-            <frame  name = "left" src = "img1.png"><a href="https://www.zomato.com/"><input type="text" id="fname" name="fname" size="53"></a> </a>
-              <frame   name = "center" src ="img2.png"><a href="https://www.zomato.com/"><input type="text" id="fname" name="fname" size="53"></a></a>
-              <frame   name = "right" src = "img3.png"><a href="https://www.zomato.com/"><input type="text" id="fname" name="fname" size="53"></a></a>
+            <a href="https://www.zomato.com/"><button style="font-size:40px">Amaravathi <i class="fa-solid fa-chevron-right">&#xf054;</i></button></a>
+            
+            <a href="https://www.zomato.com/"><button style="font-size:40px" >Kolkata  .<i class="fa-solid fa-chevron-right">&#xf054;</i></button></a> 
+              
+            <a href="https://www.zomato.com/"><button style="font-size:40px">Lucknow  <i class="fa-solid fa-chevron-right">&#xf054;</i></button></a>
+ 
+ 
               
            </frameset>  
            <br>
            <br>
-           <br>
-           <br>
 
-           <h3>Get the zomato app</h3>
-           <p>we will send you the link</p>
+           <h3 style="font-size: 250%;">Get the zomato app</h3>
+           
            <div class="bgimg" >
            <form action="https://www.zomato.com/" class="container">
+            <p style="font-size: 150%; color:white ;">we will send you the link</p>
                         
-            <label for=""email" style="color: white;">Email:</label>
-            <input type="email" id="email" name="email" pattern="[a-z][A-Z]{50}">
+            <label for="email" style="color: rgb(0, 0, 0); font-size: 150%;">Email:</label>
+            <input type="email" id="email" name="email" required>
             <br>
             <br>
-            <label for="phone" style="color: white;">Phone:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <label for="phone" style="color: black; font-size: 150%;">Phone:</label>
+            <input type="tel" id="phone" name="phone" required">
             <br>
-            
+            <br>            
             <br>
-            <input type="submit" value="Submit">       
+            <input type="submit" value="Submit" style="color: black; font-size: 130%;">    
+            <a href="https://www.zomato.com/">    </a>   
 
            </form>
            </div>
            <br>
            <br>
+           <footer>
+            <p>Contact us:<br>
+            Email:<a href="https://www.zomato.com/">zomato@gmail.com</a></p>
+            <p>Mobile:+91 9908909800</p>
+            <hr>
+            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+          </footer>
+          <br>
+          <br>
+          <br>
 
 
     </body>
